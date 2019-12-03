@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alegreya_sc</item>
+        <item>@font/caveat</item>
+        <item>@font/droid_sans_mono</item>
+        <item>@font/jockey_one</item>
+        <item>@font/kavoon</item>
+        <item>@font/merriweather_sans_bold</item>
+        <item>@font/nunito_sans_bold</item>
+        <item>@font/nunito_sans_extrabold</item>
+        <item>@font/nunito_sans_extralight</item>
+        <item>@font/nunito_semibold</item>
+        <item>@font/oswald_bold</item>
+        <item>@font/passero_one</item>
+        <item>@font/salsa</item>
+    </array>
+</resources>
