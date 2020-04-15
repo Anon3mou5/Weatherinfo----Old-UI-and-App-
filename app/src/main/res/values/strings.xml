@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">  WeatherInfo</string>
+    <string name="app_name">.info</string>
     <string name="getloc">Get Location</string>
     <string name="heading">Enter City Name</string>
     <string name="submit">Submit</string>
+    <string name="appprovided">App Powered by</string>
+    <string name="humi">Humidity</string>
+    <string name="pres">Pressure</string>
+    <string name="reel">Real Feel</string>
+
+    <string name="wind">Wind Speed</string>
+    <string name="info">.info</string>
 </resources>

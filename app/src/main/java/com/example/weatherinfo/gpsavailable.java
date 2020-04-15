@@ -21,7 +21,8 @@ public class gpsavailable extends AppCompatActivity {
     private long MIN_TIME_BW_UPDATES = 30000;
     private long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
 
-    public Location isgpsavailable(Context context) {
+    public Location isgpsavailable(final Context context,Activity a) {
+
         Log.d("NULL", "here in gps");
         mLocationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         // getting GPS status
@@ -34,6 +35,8 @@ public class gpsavailable extends AppCompatActivity {
         if (!isGPSEnabled && !isNetworkEnabled) {
 
         } else {
+
+
 
             if (isNetworkEnabled) {
                 Log.d("NULL", "here in net");
@@ -123,8 +126,7 @@ public class gpsavailable extends AppCompatActivity {
         }
 */
         }
-
-        if (location == null) {
+   if (location == null) {
             Log.d("NULL", "No location in gpsavailable");
         }
         return location;

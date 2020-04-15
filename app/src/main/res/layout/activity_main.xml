@@ -8,75 +8,43 @@
     android:layout_alignParentStart="true"
     android:layout_alignParentEnd="true"
     android:layout_alignParentBottom="true"
+    android:background="#FF9800"
     android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
     android:visibility="visible"
     app:layout_constraintBaseline_creator="@integer/mr_controller_volume_group_list_animation_duration_ms"
     tools:context=".MainActivity">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.viewpager2.widget.ViewPager2>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="303dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTintMode="src_in"
-        android:elegantTextHeight="false"
-        android:fontFamily="@font/passero_one"
-        android:text="@string/app_name"
-        android:textAlignment="textEnd"
-        android:textColor="#F2000000"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/button_0"
-        android:layout_width="82dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/getloc"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@android:drawable/ic_menu_mylocation" />
-
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="392dp"
-        android:layout_height="446dp"
-        android:layout_marginTop="35dp"
-        android:backgroundTintMode="src_in"
-        android:elegantTextHeight="false"
-        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_width="118dp"
+        android:layout_height="203dp"
+        android:fontFamily="@font/cabin_semibold"
+        android:paddingTop="50dp"
+        android:text="@string/info"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="73dp"
-        android:layout_height="149dp"
-        android:rotation="90"
-        app:layout_constraintStart_toEndOf="@+id/textView1"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_group_collapse_11" />
+        app:layout_constraintVertical_bias="0.543" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0003A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="intr.json"
+        app:lottie_loop="false"
+        tools:layout_editor_absoluteY="-55dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
