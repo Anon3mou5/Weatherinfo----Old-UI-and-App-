@@ -35,6 +35,50 @@ public class secondactivity extends AppCompatActivity {
             public void onClick(View v) {
                 Thread t = new Thread(new getdata(c,secondactivity.this));
                 t.start();
+                Thread g = new Thread() {
+                    public void run() {
+//                                while(shopwmodel.city==null)
+//                                {
+//                                    if(shopwmodel.city!=null)
+//                                    {
+//                                        break;
+//                                    }
+//                                }
+                        try {
+                            Log.d("waited", "300 seconds");
+                            this.sleep(1600);
+                        } catch (Exception e) {
+                            //Toast.makeText(secondactivity.this,"Exception caught",Toast.LENGTH_SHORT).show();
+                        }
+//                                   //setContentView(R.layout.afterintro);
+                        if (shopwmodel.city == "999") {
+                            shopwmodel.city = "Not a city";
+                        }
+                        TextView pl = findViewById(R.id.Place);
+                        pl.setText(shopwmodel.city);
+                        Log.d("settext", "succesfull: " + shopwmodel.city);
+                        TextView deg = findViewById(R.id.degree);
+                        String str = new String(shopwmodel.degree);
+                        deg.setText(str.substring(0, 2) + "°");
+                        TextView hum = findViewById(R.id.hum1);
+                        hum.setText(shopwmodel.hum);
+                        TextView pres = findViewById(R.id.pres1);
+                        pres.setText(shopwmodel.pres);
+                        TextView reel = findViewById(R.id.reel1);
+                        reel.setText(shopwmodel.feels);
+                        TextView wind = findViewById(R.id.wind1);
+                        wind.setText(shopwmodel.wind);
+                        TextView cond = findViewById(R.id.condition);
+                        cond.setText(shopwmodel.cond);
+                        TextView descr = findViewById(R.id.textView4);
+                        String sty = new String(shopwmodel.desc);
+                        String y = sty.substring(0, 1);
+                        descr.setText(y.toUpperCase() + sty.substring(1));
+                        //shopwmodel.city=null;
+                    }
+                };
+                g.start();
+
             }
         });
         b.setOnClickListener(new View.OnClickListener() {

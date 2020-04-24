@@ -5,6 +5,7 @@ import android.content.Context;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,6 +36,12 @@ public class getdata extends AppCompatActivity implements Runnable {
                     final double lng = l.getLongitude();
                     requestmodel r = new requestmodel(l, c, null);
                 }
+
+//                String sty=new String(shopwmodel.desc);
+//                String y=sty.substring(0,1);
+//                descr.setText(y.toUpperCase()+sty.substring(1));
+                //shopwmodel.city=null;
+
             }
             });
 

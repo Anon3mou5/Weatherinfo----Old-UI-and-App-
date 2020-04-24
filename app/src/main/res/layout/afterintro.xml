@@ -48,11 +48,11 @@
         android:elevation="15dp"
         android:src="@mipmap/recycle"
         android:tint="#00922D2D"
-        app:fabCustomSize="55.5dp"
+        app:fabCustomSize="57dp"
         app:fabSize="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dusk"
-        app:maxImageSize="59dp"
+        app:maxImageSize="56dp"
         app:rippleColor="#FFFFFF" />
 
     <TextView
