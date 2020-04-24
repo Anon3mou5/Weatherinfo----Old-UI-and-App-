@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/gradient"
+    android:padding="7dp"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:visibility="visible"
+    app:layout_constraintBaseline_creator="@integer/mr_controller_volume_group_list_animation_duration_ms"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="162dp"
+        android:layout_height="115dp"
+        android:fontFamily="@font/cabin_semibold"
+        android:paddingTop="20dp"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:background="#2196F3"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        android:src="@mipmap/search"
+        android:tint="@color/cast_expanded_controller_background_color"
+        app:fabCustomSize="59dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/motive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:maxImageSize="32dp" />
+
+
+
+    <EditText
+        android:id="@+id/textView5"
+        android:layout_width="267dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round"
+        android:fontFamily="@font/cabin_semibold"
+        android:paddingTop="6dp"
+        android:text=""
+        android:ems="10"
+        android:hint="Click me"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

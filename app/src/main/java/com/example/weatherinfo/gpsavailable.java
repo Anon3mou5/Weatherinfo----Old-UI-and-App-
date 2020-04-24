@@ -43,6 +43,11 @@ public class gpsavailable extends AppCompatActivity {
                 if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
                     Toast.makeText(context, "Enable Internet in settings.", Toast.LENGTH_SHORT).show();
+                    ActivityCompat.requestPermissions(
+                            this,
+                            new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
+                            40
+                    );
                 }
                 // First get location from Network Provider
                 else {

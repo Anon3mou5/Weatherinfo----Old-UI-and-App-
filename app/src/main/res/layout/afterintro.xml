@@ -8,40 +8,68 @@
     android:layout_alignParentStart="true"
     android:layout_alignParentEnd="true"
     android:layout_alignParentBottom="true"
-    android:background="#00ECB309"
+    android:background="@drawable/gradient2"
+    android:backgroundTintMode="multiply"
     android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
     android:visibility="visible"
     app:layout_constraintBaseline_creator="@integer/mr_controller_volume_group_list_animation_duration_ms"
     tools:context=".MainActivity">
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floati"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginTop="28dp"
+        android:elevation="15dp"
+        android:src="@mipmap/search3"
+        android:tint="#00922D2D"
+        app:fabCustomSize="55.5dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dusk"
+        app:layout_constraintVertical_bias="0.154"
+        app:maxImageSize="59dp"
+        app:rippleColor="#FFFFFF" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floati2"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="15dp"
+        android:src="@mipmap/recycle"
+        android:tint="#00922D2D"
+        app:fabCustomSize="55.5dp"
+        app:fabSize="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dusk"
+        app:maxImageSize="59dp"
+        app:rippleColor="#FFFFFF" />
+
     <TextView
         android:id="@+id/Place"
-        android:layout_width="252dp"
-        android:layout_height="44dp"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/cabin_semibold"
         android:text="@string/info"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="27sp"
+        android:elevation="10dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/degree"
-        android:layout_width="140dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="40dp"
-        android:fontFamily="sans-serif-light"
-        android:text="60"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="70sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,6 +79,7 @@
         android:layout_height="19dp"
         android:layout_marginTop="75dp"
         android:text="TextView"
+        android:elevation="10dp"
         android:textAlignment="center"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,12 +88,14 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/sunny"
-        android:layout_width="172dp"
-        android:layout_height="127dp"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="40dp"
-        android:background="#00E42E2E"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/round2"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
         android:textAlignment="center"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,8 +114,9 @@
         android:layout_height="127dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="120dp"
-        android:layout_marginEnd="80dp"
-        android:background="#00E42E2E"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="#FFFFFF"
         android:textAlignment="center"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,27 +126,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007"
         app:lottie_autoPlay="true"
+        android:elevation="10dp"
         app:lottie_fileName="cloiudy.json"
-        app:lottie_loop="true" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/rainy"
-        android:layout_width="172dp"
-        android:layout_height="127dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="80dp"
-        android:background="#00E42E2E"
-        android:textAlignment="center"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="rain.json"
         app:lottie_loop="true" />
 
     <TextView
@@ -126,6 +139,7 @@
         android:background="@drawable/shadow"
         android:backgroundTint="#F0EFEF"
         android:elevation="10dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -150,6 +164,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/dusk" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="108dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round2"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="60°"
+        android:textAlignment="viewEnd"
+        android:textColor="#000000"
+        android:textSize="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view2"
@@ -244,6 +277,21 @@
         app:lottie_loop="true" />
 
     <TextView
+        android:id="@+id/motive"
+        android:layout_width="129dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="1dp"
+        android:text="@string/appprovided"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/hum"
         android:layout_width="74dp"
         android:layout_height="22dp"
@@ -328,6 +376,7 @@
         android:text="TextView"
         android:textColor="#000000"
         android:textSize="18dp"
+
         app:layout_constraintStart_toEndOf="@+id/Humidity"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -346,43 +395,58 @@
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
 
-    <TextView
-        android:id="@+id/motive"
-        android:layout_width="232dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/appprovided"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/powered"
-        android:layout_width="192dp"
-        android:layout_height="112dp"
+        android:layout_width="58dp"
+        android:layout_height="57dp"
         android:layout_marginStart="90dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="20dp"
-        android:background="#00E42E2E"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
         android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="an1.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rainy"
+        android:layout_width="172dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="#FFFFFF"
+        android:textAlignment="center"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965"
+        app:layout_constraintVertical_bias="0.007"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="an1.json"
+        app:lottie_fileName="rain.json"
         app:lottie_loop="true" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="181dp"
-        android:layout_height="27dp"
+        android:layout_width="197dp"
+        android:layout_height="37dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/roboto"
         android:text="TextView"
+        android:elevation="10dp"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
