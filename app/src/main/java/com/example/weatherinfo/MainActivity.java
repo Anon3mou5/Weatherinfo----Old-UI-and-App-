@@ -1,33 +1,19 @@
 package com.example.weatherinfo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
-import android.Manifest;
-import java.lang.Thread;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.Manifest;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.ActivityOptions;
-import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.animation.Animation;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.ImageButton;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieDrawable;
+import com.jaeger.library.StatusBarUtil;
 
 public class MainActivity extends AppCompatActivity {
     Location l;
@@ -35,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        StatusBarUtil.setTransparent(this);
         final Intent intent = new Intent(this,secondactivity.class);
         Thread t = new Thread(new getdata(getApplicationContext(),this));
         t.start();
@@ -79,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent,
                        ActivityOptions.makeSceneTransitionAnimation(act).toBundle());
+
+                finish();
 
 //                TextView pl= findViewById(R.id.Place);
 //                pl.setText(shopwmodel.city);
