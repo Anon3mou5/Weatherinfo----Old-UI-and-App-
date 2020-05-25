@@ -9,8 +9,8 @@
         <item name="android:windowTranslucentNavigation">true</item>
         <!-- enable window content transitions -->
         <item name="imageButtonStyle">@style/Widget.AppCompat.ImageButton</item>
-        <item name="android:windowEnterTransition">@android:transition/explode</item>
-        <item name="android:windowExitTransition">@android:transition/slide_top</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_left</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>

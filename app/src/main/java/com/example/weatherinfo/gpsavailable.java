@@ -11,17 +11,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-public class gpsavailable extends AppCompatActivity {
+public class gpsavailable {
     LocationManager mLocationManager;
     double lat, lng;
     private Location location;
     private long MIN_TIME_BW_UPDATES = 30000;
     private long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
 
-    public Location isgpsavailable(final Context context,Activity a) {
+    public Location isgpsavailable(final Context context, final Activity a) {
 
         Log.d("NULL", "here in gps");
         mLocationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
@@ -44,7 +43,7 @@ public class gpsavailable extends AppCompatActivity {
 
                     Toast.makeText(context, "Enable Internet in settings.", Toast.LENGTH_SHORT).show();
                     ActivityCompat.requestPermissions(
-                            this,
+                            a,
                             new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
                             40
                     );
@@ -71,7 +70,7 @@ public class gpsavailable extends AppCompatActivity {
                                 @Override
                                 public void onProviderDisabled(String provider) {
 
-                                    Toast.makeText(getApplicationContext(), "Disabled", Toast.LENGTH_SHORT);
+                                    Toast.makeText(a, "Disabled", Toast.LENGTH_SHORT);
                                 }
 
 
