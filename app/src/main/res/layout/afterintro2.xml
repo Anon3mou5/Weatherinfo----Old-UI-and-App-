@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:background="@drawable/newui"
+        android:backgroundTint="#F9F9F9"
+        android:backgroundTintMode="multiply"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:visibility="visible"
+        app:layout_constraintBaseline_creator="@integer/mr_controller_volume_group_list_animation_duration_ms"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="255dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="552dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="10dp"
+            android:fontFamily="@font/cabin_semibold"
+            android:text="@string/info"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="203dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="9:30 pm"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/day" />
+
+        <TextView
+            android:id="@+id/Place"
+            android:layout_width="265dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/cabin"
+            android:text="@string/info"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="195dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="10dp"
+            android:fontFamily="@font/roboto"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="186dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="115dp"
+            android:elevation="10dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/dusk"
+                android:layout_width="164dp"
+                android:layout_height="65dp"
+                android:background="@drawable/shadow"
+
+                android:backgroundTint="#9EFFFEFE"
+                android:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/reel"
+                android:layout_width="105dp"
+                android:layout_height="25dp"
+                android:elevation="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="3dp"
+                android:text="Real Feel"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/real"
+                app:layout_constraintTop_toTopOf="@+id/dusk" />
+
+            <TextView
+                android:id="@+id/real"
+                android:layout_width="103dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="32dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/cabin_semibold"
+                android:padding="3dp"
+                android:text="Real Feel"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reel"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/realfeel"
+                android:layout_width="69dp"
+                android:layout_height="73dp"
+                android:tint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/dusk"
+                app:layout_constraintTop_toTopOf="@+id/dusk"
+                app:srcCompat="@drawable/places_ic_search" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="312dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="124dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="23°"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/pressure"
+            android:layout_width="75dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="80dp"
+            android:background="#00E42E2E"
+            android:elevation="15dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.821"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="pressure2.json"
+            app:lottie_loop="true" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="197dp"
+            android:layout_height="167dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degree"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="12dp"
+            android:tint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            app:srcCompat="@drawable/places_ic_search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+

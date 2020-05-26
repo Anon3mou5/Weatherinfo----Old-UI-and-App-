@@ -64,11 +64,16 @@ public class MainActivity extends AppCompatActivity {
 //        k.setVisibility(View.INVISIBLE);
 //        l.setVisibility(View.INVISIBLE);
 
+                if (shopwmodel.degree == null) {
 
-        startActivity(intent,
-                       ActivityOptions.makeSceneTransitionAnimation(act).toBundle());
+                    Intent t = new Intent(MainActivity.this, zActivity.class);
+                    startActivity(t);
+                    finish();
+                } else {
+                    startActivity(intent,
+                            ActivityOptions.makeSceneTransitionAnimation(act).toBundle());
 
-                finish();
+                }
 
 //                TextView pl= findViewById(R.id.Place);
 //                pl.setText(shopwmodel.city);
