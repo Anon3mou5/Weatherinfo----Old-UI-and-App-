@@ -4,7 +4,7 @@
         android:bottom="-200dp"
         android:left="-160dp"
         android:right="0dp"
-        android:top="400dp">
+        android:top="200dp">
         <shape android:shape="rectangle">
             <gradient
                 android:angle="180"
@@ -15,7 +15,7 @@
 
 
     <item
-        android:bottom="80dp"
+        android:bottom="400dp"
         android:left="-70dp"
         android:right="-290dp"
         android:top="-190dp">
@@ -29,7 +29,7 @@
     </item>
 
     <item
-        android:bottom="80dp"
+        android:bottom="400dp"
         android:left="-70dp"
         android:right="-290dp"
         android:top="-190dp">
