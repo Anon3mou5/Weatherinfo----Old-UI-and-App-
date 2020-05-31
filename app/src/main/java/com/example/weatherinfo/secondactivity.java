@@ -69,8 +69,8 @@ public class secondactivity extends AppCompatActivity {
 
         });
         t.start();
-        SwipeRefreshLayout swipe = findViewById(R.id.swipe_container);
-        swipe.setRefreshing(false);
+        final SwipeRefreshLayout swipe = findViewById(R.id.swipe_container);
+
         swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -125,6 +125,7 @@ public class secondactivity extends AppCompatActivity {
 
                 };
                 g.start();
+                swipe.setRefreshing(false);
 
             }
 
