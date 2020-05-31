@@ -121,11 +121,12 @@ public class secondactivity extends AppCompatActivity {
                                 //shopwmodel.city=null;
                             }
                         });
+                        swipe.setRefreshing(false);
                     }
 
                 };
                 g.start();
-                swipe.setRefreshing(false);
+
 
             }
 
